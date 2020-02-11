@@ -47,8 +47,8 @@ class Topics(object):
             data (list):
         """
         U = Pipeline([('tfidf', self.vectorizer), ('svd', self.svd)]).fit_transform(data)  # documents-topics
-        V_T = self.svd.components_         # topics-words
-        return U, V_T
+        V = self.svd.components_         # topics-words
+        return U, V
 
     def print_n_dominante_words_topic_(self, V=None, n=30):
         """
