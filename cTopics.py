@@ -73,7 +73,7 @@ class Topics(object):
 
 if __name__ == '__main__':
 
-    topics_ = Topics(file="./data/titles_2002.pickle")
+    topics_ = Topics(file="./titles_2002.pickle")
 
 
 
