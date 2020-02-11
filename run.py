@@ -9,7 +9,7 @@ def run_year(year):
     :return:
     """
 
-    topics_ = Topics(file='./data/titles_' + year + '.pickle')
+    topics_ = Topics(file='./titles_' + year + '.pickle')
 
     for m_index, m_text in topics_.data.items():  # (month_index / month_text)
         topics_.fit_transform(data=m_text)
